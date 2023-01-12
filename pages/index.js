@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 //components
-import cards from  './cards'
+import Cards from  './cards'
 import Newcard from './Newcard'
 //styles
 import styles from '../styles/Home.module.css'
@@ -25,9 +25,8 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet" />
 
       </Head>
-
-      <Link href={'/cards'}><button > Cartitas</button></Link>
-      <Link href={'/Newcard'}><button> Agregar cartas </button></Link>
+      
+      <Cards></Cards>
     </div>
   )
 }
