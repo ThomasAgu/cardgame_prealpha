@@ -1,9 +1,8 @@
-html,
+/* Encantamientocolors */
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -15,12 +14,1134 @@ a {
   box-sizing: border-box;
 }
 
+#card-component h1 {
+  font-family: "Cinzel", serif;
+  font-size: 500%;
+  width: 100%;
+  color: #9A3C29;
+  margin: auto;
+  text-align: center;
+  margin-top: 5vh;
+  letter-spacing: 15px;
+}
+#card-component #div-ribon {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 0px;
+  height: 120px;
+  border-left: 50px solid #9A3C29;
+  border-right: 50px solid #9A3C29;
+  border-bottom: 35px solid transparent;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#card-component #div-ribon:hover {
+  height: 150px;
+}
+#card-component #div-ribon:hover button {
+  top: 25%;
+  font-size: 450%;
+  margin-left: -2.6vw;
+}
+#card-component #div-ribon button {
+  position: absolute;
+  top: 5%;
+  margin-left: -2.5vw;
+  width: 5vw;
+  background: none;
+  border: none;
+  font-size: 400%;
+  color: #F7F7F7;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#card-barra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+
+#cards-options {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 70vw;
+  height: 10vh;
+  margin-top: 5vh;
+  background-color: #9A3C29;
+  justify-content: flex-start;
+  position: relative;
+}
+#cards-options button {
+  background-color: #9A3C29;
+  border: 10px solid #232146;
+  height: 8vh;
+  width: 10vw;
+  margin-left: 2%;
+  font-family: "Cinzel", serif;
+  font-size: 150%;
+  color: #F7F7F7;
+  border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#cards-options button:hover {
+  background-color: #232146;
+  width: 12vw;
+  box-shadow: 0px 5px 20px #232146;
+  text-shadow: 0px 2px 15px #F7F7F7;
+}
+#cards-options #rareza.active {
+  background-color: #232146;
+}
+#cards-options #tipo.active {
+  background-color: #232146;
+}
+#cards-options #costo.active {
+  background-color: #232146;
+}
+#cards-options #cards-option-searchbar {
+  position: absolute;
+  right: 2%;
+  width: 40%;
+}
+#cards-options #cards-option-searchbar #iconmagnify {
+  position: absolute;
+  right: 0%;
+  color: #9A3C29;
+  font-size: 250%;
+  top: 20%;
+  right: 3%;
+}
+#cards-options #cards-option-searchbar input {
+  border: none;
+  height: 8vh;
+  width: 100%;
+  font-size: 180%;
+  font-family: "Cinzel", serif;
+  border-radius: 5px;
+  color: #393E46;
+  padding-left: 2%;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#cards-options #cards-option-searchbar input:focus {
+  outline: 1px solid #232146;
+}
+
+/* Formulario y cartas */
+#newcardComponent {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+  font-family: "Cinzel", serif;
+  font-size: 150%;
+}
+
+#type-form {
+  margin-top: 2%;
+}
+
+#checklist {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+}
+
+#checklist input {
+  width: 1.4em;
+}
+
+#card {
+  border: 10px solid #393E46;
+  width: 30%;
+  border-radius: 12px;
+  background-color: #F7F7F7;
+  position: static;
+  box-shadow: 1px 1px 10px #393E46;
+  height: 100%;
+}
+
+/* CArd action buton */
+#card-head {
+  margin: 2%;
+  border: 1px solid #393E46;
+  background-color: #393E46;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#card-cost {
+  display: flex;
+  align-items: center;
+  font-family: "Cinzel", serif;
+}
+
+#card-title {
+  padding-left: 2%;
+  font-family: "Cinzel", serif;
+}
+
+#card-cost-icon {
+  padding-top: 0.2em;
+  margin-right: 0.2em;
+}
+
+#card-img {
+  position: relative;
+  width: 97%;
+  height: 200px;
+  margin: auto;
+  border: 1px double #393E46;
+}
+
+#card-img-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#card-img-create {
+  position: relative;
+  width: 97%;
+  height: 400px;
+  margin: auto;
+  border: 1px double #393E46;
+}
+
+#card-img-img-create {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#card-types {
+  border: 1px solid #393E46;
+  margin: 0% 2% 2% 2%;
+  background-color: #393E46;
+  color: #F7F7F7;
+  font-family: "Cinzel", serif;
+  font-size: 1.1rem;
+  padding-left: 2%;
+}
+
+#card-description {
+  border: 1px solid #393E46;
+  margin: 2%;
+  padding: 3%;
+  font-family: "Rubik", sans-serif;
+  color: #F7F7F7;
+  font-size: 80%;
+  /* Altura */
+  max-height: 10vh;
+  overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F2E7D5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #393E46;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #393E46;
+  width: 5px;
+}
+
+#card-commander {
+  border: 1px solid #393E46;
+  margin: 2%;
+  padding: 3%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #393E46;
+}
+
+#card-commander span {
+  font-weight: bolder;
+  color: #393E46;
+}
+
+#card-quote {
+  padding: 3%;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 90%;
+  color: #393E46;
+}
+
+#card-points {
+  border-top: 1px solid #393E46;
+  padding: 1%;
+  display: flex;
+  justify-content: end;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  color: #393E46;
+}
+
+#card-powers {
+  margin-top: 4%;
+}
+
+.card-powers-powerForm {
+  display: flex;
+  flex-direction: row;
+}
+
+#activacion {
+  width: 20%;
+  margin: 1%;
+}
+
+#coste {
+  width: 10%;
+  margin: 1%;
+}
+
+#description {
+  width: 70%;
+  margin: 1%;
+}
+
+#addBtn {
+  width: 20%;
+  border-radius: 20px;
+  border: none;
+  margin: 1%;
+  background-color: #85A490;
+}
+
+#addbtnicon {
+  color: #F7F7F7;
+  font-size: 150%;
+  font-size: 2em;
+}
+
+#card-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #393E46;
+  border-radius: 12px;
+  padding: 4%;
+  box-shadow: 1px 1px 10px #393E46;
+}
+
+input {
+  font-size: 1.4em;
+  height: 2em;
+  border: 1px solid #85A490;
+  padding-left: 2%;
+}
+
+input:focus {
+  outline: 3px solid #85A490;
+}
+
+select {
+  height: 2em;
+  font-size: 1.4em;
+  border: 1px solid #85A490;
+}
+
+select:focus {
+  outline: 3px solid #85A490;
+}
+
+label {
+  margin-top: 2%;
+  font-size: 1.4em;
+}
+
+textarea {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 80%;
+  padding: 2% 0% 0% 2%;
+  border: 1px solid #85A490;
+}
+
+textarea:focus {
+  outline: 3px solid #85A490;
+}
+
+#point {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#point button {
+  border: none;
+  font-size: 110%;
+  color: var(--back-color);
+  background-color: var(--back-orange);
+}
+
+.point-icon {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.point-icon:hover {
+  font-size: 170%;
+  color: var(--dark-violet);
+}
+
+#card-power-list {
+  background-color: #85A490;
+  font-size: 120%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transition: all 1s ease;
+}
+
+#card-power-description {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: space-around;
+  padding: 2%;
+}
+
+#card-power-btn {
+  font-size: 120%;
+  color: #9A3C29;
+  border: none;
+  border-radius: 20px;
+  background: none;
+}
+
+#form-commander {
+  display: flex;
+  flex-direction: column;
+}
+
+#card-danio {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-num {
+  text-align: center;
+}
+
+#card-spell {
+  display: flex;
+  flex-direction: column;
+}
+
+#card-submit {
+  height: 3em;
+  border-radius: 12px;
+  border: none;
+  margin-top: 1em;
+  font-family: "Cormorant SC", serif;
+  font-size: 110%;
+  background-color: #85A490;
+  color: #F7F7F7;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#card-submit:disabled {
+  background-color: #393E46;
+  color: #F2E7D5;
+}
+
+#form-img-input {
+  border-radius: 20px;
+  border: 1px solid #85A490;
+  margin: 3%;
+  padding: 2%;
+  height: 100%;
+}
+
+/* Formulario y cartas */
+/* Cartas List y cartas */
+.cartas {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.label {
+  font-family: "Cinzel", serif;
+  padding-top: 0.7vh;
+  padding-left: 2%;
+  text-align: start;
+  height: 4vh;
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+}
+
+#labelCOMUN {
+  background-color: #85A490;
+  border-left: 20px solid #6D9886;
+  color: #F7F7F7;
+  width: 20vw;
+  box-shadow: 1px 1px 20px #6D9886;
+}
+
+#labelINFRECUENTE {
+  background-color: #232146;
+  border-left: 20px solid #393E46;
+  color: #F7F7F7;
+  width: 20vw;
+  box-shadow: 1px 1px 20px #393E46;
+}
+
+#labelRARA {
+  background-color: #D28454;
+  border-left: 20px solid #9A3C29;
+  color: #F7F7F7;
+  width: 20vw;
+  box-shadow: 1px 1px 20px #9A3C29;
+}
+
+#labelMITICA {
+  background-color: #393E46;
+  border-left: 20px solid #E9CA87;
+  color: #F7F7F7;
+  width: 20vw;
+  box-shadow: 1px 1px 20px #E9CA87;
+}
+
+#labelCosto {
+  background-color: #398AB9;
+  border-left: 20px solid #393E46;
+  color: #EEEEEE;
+  width: 8%;
+  box-shadow: 1px 1px 20px #393E46;
+}
+
+#labelARTEFACTO {
+  background-color: #E26A2C;
+  border-left: 20px solid #FDA65D;
+  color: #EEEEEE;
+  width: 20%;
+  box-shadow: 1px 1px 20px #FDA65D;
+}
+
+#labelCOMANDANTE {
+  background-color: #61481C;
+  border-left: 20px solid #E6B325;
+  color: #E6B325;
+  width: 20%;
+  box-shadow: 1px 1px 20px #E6B325;
+}
+
+#labelCONJURO {
+  background-color: #51557E;
+  border-left: 20px solid #816797;
+  color: #EEEEEE;
+  width: 20%;
+  box-shadow: 1px 1px 20px #816797;
+}
+
+#labelCRIATURA {
+  background-color: #434343;
+  border-left: 20px solid #F8F8F8;
+  color: #F8F8F8;
+  width: 20%;
+  box-shadow: 1px 1px 20px #F8F8F8;
+}
+
+#labelENCANTAMIENTO {
+  background-color: #6CC4A1;
+  border-left: 20px solid #A0D995;
+  color: #EEEEEE;
+  width: 20%;
+  box-shadow: 1px 1px 20px #A0D995;
+}
+
+#labelINSTANTANEO {
+  background-color: #398AB9;
+  border-left: 20px solid #EEEEEE;
+  color: #EEEEEE;
+  width: 21%;
+  box-shadow: 1px 1px 20px #EEEEEE;
+}
+
+#cartas-ordenamiento {
+  display: grid;
+  margin-top: 7vh;
+  margin-bottom: 5vh;
+  grid-template-columns: repeat(5, 20%);
+  justify-content: center;
+}
+
+#label-ordenamiento-separator {
+  width: 80%;
+  border-bottom: 2px solid #393E46;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px #393E46;
+  margin-bottom: 5vh;
+}
+
+/* CArd action buton */
+#card-action-btns {
+  position: absolute;
+  right: -10%;
+  top: -5%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  height: 40%;
+  justify-content: space-between;
+}
+#card-action-btns button {
+  width: 80px;
+  height: 80px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid #F7F7F7;
+  font-size: 300%;
+  box-shadow: 0px 4px 20px #393E46;
+  transition: all 0.2s ease;
+}
+#card-action-btns #delete {
+  color: #9A3C29;
+  background-color: #393E46;
+}
+#card-action-btns #delete:hover {
+  width: 85px;
+  height: 85px;
+  color: #F7F7F7;
+  border: 5px solid #9A3C29;
+  background-color: #9A3C29;
+  box-shadow: 0px 5px 20px #9A3C29;
+}
+#card-action-btns #update {
+  color: #85A490;
+  background-color: #393E46;
+}
+#card-action-btns #update:hover {
+  width: 85px;
+  height: 85px;
+  color: #F7F7F7;
+  border: 5px solid #85A490;
+  background-color: #85A490;
+  box-shadow: 0px 5px 20px #85A490;
+}
+
+/* CArd action buton */
+.card {
+  width: 90%;
+  height: 45vh;
+  border-radius: 12px;
+  box-shadow: 1px 1px 10px #434343;
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+}
+.card:hover {
+  width: 95%;
+  height: 46vh;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.card .card-head {
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card .card-title {
+  padding-left: 2%;
+  color: #F2F2F2;
+  font-family: "Cinzel", serif;
+}
+
+.card .card-cost {
+  display: flex;
+  align-items: center;
+  font-family: "Cinzel", serif;
+  color: #F2F2F2;
+}
+
+.card .card-cost-icon {
+  color: #F2F2F2;
+  padding-top: 0.2em;
+  margin-right: 0.2em;
+  font-weight: bolder;
+}
+
+.card .card-img {
+  width: 96%;
+  height: 400px;
+  margin: auto;
+}
+
+.card .card-img-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-types {
+  margin: 0% 2% 2% 2%;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1em;
+  padding-left: 2%;
+  color: #F2F2F2;
+}
+
+.card .card-description {
+  margin: 2%;
+  padding: 3%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  color: #F2F2F2;
+}
+
+.card .card-commander {
+  margin: 2%;
+  padding: 3%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+.card .card-commander span {
+  font-weight: bolder;
+}
+
+.card .card-quote {
+  padding: 3%;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 90%;
+  color: #F2F2F2;
+}
+
+.card .card-points {
+  padding: 1%;
+  display: flex;
+  justify-content: end;
+  font-family: "Rubik", sans-serif;
+  color: #F2F2F2;
+}
+
+/* Cards particulares */
+#comandante {
+  background-color: #BF9742;
+  border: 10px solid #61481C;
+}
+#comandante:hover {
+  box-shadow: 2px 2px 20px #BF9742;
+}
+
+#comandante #card-head {
+  background-color: #61481C;
+  border: 1px solid #61481C;
+  border-radius: 2px;
+  color: #E6B325;
+}
+
+#comandante #card-title {
+  color: #E6B325;
+}
+
+#comandante #card-cost {
+  color: #E6B325;
+}
+
+#comandante #card-cost-icon {
+  color: #E6B325;
+}
+
+#comandante #card-img {
+  border: 1px double #E6B325;
+}
+
+#comandante #card-types {
+  border: 1px solid #E6B325;
+  background-color: #61481C;
+  color: #E6B325;
+}
+
+#comandante #card-description {
+  border: 1px solid #E6B325;
+  background-color: #61481C;
+}
+
+#comandante #card-commander {
+  border: 1px solid #BF9742;
+  background-color: #A47E3B;
+}
+
+#comandante #card-points {
+  border-top: 1px solid #E6B325;
+  background-color: #61481C;
+  color: #E6B325;
+}
+
+#comandante #card-quote {
+  color: #61481C;
+}
+
+#comandante #card-commander {
+  color: #61481C;
+}
+
+#artefacto {
+  background-color: #FF8243;
+  border: 10px solid #E26A2C;
+}
+#artefacto:hover {
+  box-shadow: 2px 2px 20px #E26A2C;
+}
+
+#artefacto #card-head {
+  background-color: #E26A2C;
+  border: 1px solid #FDA65D;
+  border-radius: 2px;
+}
+
+#artefacto #card-img {
+  border: 1px double #1B2430;
+}
+
+#artefacto #card-types {
+  border: 1px solid #FDA65D;
+  background-color: #E26A2C;
+}
+
+#artefacto #card-description {
+  border: 1px solid #FDA65D;
+  background-color: #E26A2C;
+}
+
+#artefacto #card-points {
+  border-top: 1px solid #FDA65D;
+  background-color: #E26A2C;
+}
+
+#instantaneo {
+  background-color: #398AB9;
+  border: 10px solid #EEEEEE;
+}
+#instantaneo:hover {
+  box-shadow: 2px 2px 20px #398AB9;
+}
+
+#instantaneo #card-head {
+  background-color: #1C658C;
+  border: 1px solid #EEEEEE;
+  border-radius: 2px;
+}
+
+#instantaneo #card-img {
+  border: 1px double #1B2430;
+}
+
+#instantaneo #card-types {
+  border: 1px solid #EEEEEE;
+  background-color: #1C658C;
+}
+
+#instantaneo #card-description {
+  border: 1px solid #EEEEEE;
+  background-color: #1C658C;
+}
+
+#criatura {
+  background-color: #434343;
+  border: 10px solid #F8F8F8;
+}
+#criatura:hover {
+  box-shadow: 2px 2px 20px #434343;
+}
+
+#criatura #card-head {
+  background-color: #434343;
+  border: 1px solid #F8F8F8;
+  border-radius: 2px;
+}
+
+#criatura #card-img {
+  border: 1px double #1B2430;
+}
+
+#criatura #card-types {
+  border: 1px solid #F8F8F8;
+  background-color: #434343;
+}
+
+#criatura #card-description {
+  border: 1px solid #F8F8F8;
+  background-color: #434343;
+}
+
+#criatura #card-points {
+  border-top: 1px solid #434343;
+  background-color: #F8F8F8;
+  color: #434343;
+}
+
+#criatura #card-quote {
+  color: #F8F8F8;
+}
+
+#encantamiento {
+  background-color: #A0D995;
+  border: 10px solid #6CC4A1;
+}
+#encantamiento:hover {
+  box-shadow: 2px 2px 20px #6CC4A1;
+}
+
+#encantamiento #card-head {
+  background-color: #6CC4A1;
+  border: 1px solid #F6E3C5;
+  border-radius: 2px;
+}
+
+#encantamiento #card-img {
+  border: 1px double #1B2430;
+}
+
+#encantamiento #card-types {
+  border: 1px solid #F6E3C5;
+  background-color: #6CC4A1;
+}
+
+#encantamiento #card-description {
+  border: 1px solid #F6E3C5;
+  background-color: #6CC4A1;
+}
+
+#encantamiento #card-points {
+  border-top: 1px solid #F6E3C5;
+  background-color: #6CC4A1;
+}
+
+#conjuro {
+  background-color: #816797;
+  border: 10px solid #51557E;
+}
+#conjuro:hover {
+  box-shadow: 2px 2px 20px #51557E;
+}
+
+#conjuro #card-head {
+  background-color: #51557E;
+  border: 1px solid #1B2430;
+  border-radius: 2px;
+}
+
+#conjuro #card-img {
+  border: 1px double #1B2430;
+}
+
+#conjuro #card-types {
+  border: 1px solid #1B2430;
+  background-color: #51557E;
+}
+
+#conjuro #card-description {
+  border: 1px solid #1B2430;
+  background-color: #51557E;
+}
+
+#conjuro #card-points {
+  border-top: 1px solid #1B2430;
+  background-color: #51557E;
+  color: #F7F7F7;
+}
+
+#antiComandante {
+  background-color: #3F4E4F;
+  border: 10px solid #2C3639;
+}
+
+#antiComandante #card-head {
+  background-color: #2C3639;
+  border: 1px solid #DCD7C9;
+  border-radius: 2px;
+}
+
+#antiComandante #card-title {
+  color: red;
+}
+
+#antiComandante #card-cost {
+  color: red;
+}
+
+#antiComandante #card-cost-icon {
+  color: red;
+}
+
+#antiComandante #card-img {
+  border: 1px double #DCD7C9;
+}
+
+#antiComandante #card-types {
+  border: 1px solid #DCD7C9;
+  background-color: #2C3639;
+  color: red;
+}
+
+#antiComandante #card-description {
+  border: 1px solid #DCD7C9;
+  background-color: #2C3639;
+}
+
+#antiComandante #card-commander {
+  border: 1px solid #DCD7C9;
+  background-color: #990000;
+}
+
+#antiComandante #card-points {
+  border-top: 1px solid #3F4E4F;
+  background-color: #2C3639;
+  color: red;
+}
+
+/* End Card Styles */
+/* POPUP DELETE */
+#popup-background {
+  top: 0;
+  left: 0;
+  height: 500%;
+  width: 100vw;
+  position: absolute;
+  background-color: #393E46;
+  filter: opacity(0.5);
+  z-index: 100;
+}
+
+#popup-content {
+  position: fixed;
+  top: 20%;
+  z-index: 150;
+  left: 20%;
+  text-align: center;
+  width: 60vw;
+  height: 30vh;
+  background-color: #393E46;
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px #393E46;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#popup-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #9A3C29;
+  border: none;
+  font-size: 250%;
+  color: #F7F7F7;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#popup-cardName {
+  font-family: "Rubik", sans-serif;
+  display: inline;
+  color: #9A3C29;
+}
+
+#popup-btns {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: -5%;
+}
+#popup-btns button {
+  width: 25%;
+  height: 5vh;
+  border-radius: 2px;
+  border: 2px solid #F7F7F7;
+  font-size: 150%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#popup-btns #pop-delete {
+  background-color: #9A3C29;
+  color: #F7F7F7;
+}
+#popup-btns #pop-delete:hover {
+  box-shadow: 0px 5px 20px #9A3C29;
+  text-shadow: 0px 2px 4px #F7F7F7;
+  width: 28%;
+}
+#popup-btns #pop-cancel {
+  background-color: #F7F7F7;
+  color: #393E46;
+}
+#popup-btns #pop-cancel:hover {
+  box-shadow: 0px 5px 20px #393E46;
+  text-shadow: 0px 2px 4px #F7F7F7;
+  width: 28%;
+}
+
+/* Feedback component */
+#feedbackComponent {
+  position: sticky;
+  border-radius: 5px;
+  z-index: 900;
+  bottom: 5%;
+  margin-bottom: 5vh;
+  width: 60%;
+  color: #F7F7F7;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  margin-left: 15%;
+  box-shadow: 0px 10px 20px #393E46;
+}
+#feedbackComponent #barra {
+  border-top: 10px solid #F7F7F7;
+  transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#feedbackComponent button {
+  position: absolute;
+  top: 15%;
+  right: 2%;
+  background-color: #9A3C29;
+  border: none;
+  font-size: 120%;
+  color: #F7F7F7;
+}
+
+/* Feedback component */
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    color-scheme: #F2E7D5;
   }
   body {
     color: white;
-    background: black;
+    background: #F2E7D5;
   }
 }
+
+/*# sourceMappingURL=globals.css.map */

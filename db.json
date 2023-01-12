@@ -1,0 +1,195 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "Carta1",
+        "mana_cost": 2,
+        "image": "qiugaiaus",
+        "rarity": {
+          "id": 1,
+          "name": "comun"
+        },
+        "types": [
+          {
+            "id": 1,
+            "name": "comandante"
+          }
+        ],
+        "subtypes": "anazi",
+        "effect": "Le gusta lo kinki nasty lo que sea facil? le gusta el sexo en exceso",
+        "quote": "Anachi",
+        "attack": 1,
+        "health": 4
+      },
+      {
+        "id": 2,
+        "name": "Carta2",
+        "mana_cost": 1,
+        "image": "asdasd",
+        "rarity": {
+          "id": 2,
+          "name": "infrecuente"
+        },
+        "types": [
+          {
+            "id": 2,
+            "name": "instantaneo"
+          }
+        ],
+        "subtypes": "anazi",
+        "effect": "Le gusta lo kinki nasty lo que sea facil? le gusta el sexo en exceso",
+        "quote": "Anachi",
+        "attack": 3,
+        "health": 1
+      },
+      {
+        "id": 3,
+        "name": "Carta3",
+        "mana_cost": 4,
+        "image": "qiugaiaus",
+        "rarity": {
+          "id": 1,
+          "name": "infrecuente"
+        },
+        "types": [
+          {
+            "id": 3,
+            "name": "encantamiento"
+          }
+        ],
+        "subtypes": "anazi",
+        "effect": "Le gusta lo kinki nasty lo que sea facil? le gusta el sexo en exceso",
+        "quote": "Anachi",
+        "attack": 1,
+        "health": 4
+      },
+      {
+        "id": 4,
+        "name": "Carta1",
+        "mana_cost": 2,
+        "image": "qiugaiaus",
+        "rarity": {
+          "id": 1,
+          "name": "comun"
+        },
+        "types": [
+          {
+            "id": 1,
+            "name": "criatura"
+          }
+        ],
+        "subtypes": "anazi",
+        "effect": "Le gusta lo kinki nasty lo que sea facil? le gusta el sexo en exceso",
+        "quote": "Anachi",
+        "attack": 1,
+        "health": 4
+      },
+      {
+        "id": 5,
+        "name": "Carta1",
+        "mana_cost": 2,
+        "image": "qiugaiaus",
+        "rarity": {
+          "id": 1,
+          "name": "rara"
+        },
+        "types": [
+          {
+            "id": 1,
+            "name": "artefacto"
+          }
+        ],
+        "subtypes": "anazi",
+        "effect": "Le gusta lo kinki nasty lo que sea facil? le gusta el sexo en exceso",
+        "quote": "Anachi",
+        "attack": 1,
+        "health": 4
+      },
+      {
+        "id": 6,
+        "name": "Carta5",
+        "mana_cost": 2,
+        "image": "qiugaiaus",
+        "rarity": {
+          "id": 1,
+          "name": "mitica"
+        },
+        "types": [
+          {
+            "id": 1,
+            "name": "instantaneo"
+          }
+        ],
+        "subtypes": "anazi",
+        "effect": "Le gusta lo kinki nasty lo que sea facil? le gusta el sexo en exceso",
+        "quote": "Anachi",
+        "attack": 12,
+        "health": 44
+      },
+      {
+        "id": 7,
+        "name": "NombreInge",
+        "mana_cost": 0,
+        "image": "qiugaiaus",
+        "rarity": {
+          "id": 1,
+          "name": "mitica"
+        },
+        "types": [
+          {
+            "id": 1,
+            "name": "instantaneo"
+          }
+        ],
+        "subtypes": "RicarditoArjona",
+        "effect": "Le gusta lo kinki nasty lo que sea facil? le gusta el sexo en exceso",
+        "quote": "Anachi",
+        "attack": 12,
+        "health": 44
+      },
+      {
+        "id": 8,
+        "name": "coste2",
+        "mana_cost": 2,
+        "image": "adsjda",
+        "rarity": {
+          "id": 1,
+          "name": "comun"
+        },
+        "types": [
+          {
+            "id": 1,
+            "name": "conjuro"
+          }
+        ],
+        "subtypes": "RicarditoArjona",
+        "effect": "Le gusta lo kinki nasty lo que sea facil? le gusta el sexo en exceso",
+        "quote": "Anachi",
+        "attack": 2,
+        "health": 2
+      },
+      {
+        "id": 9,
+        "name": "criaturacoste2",
+        "mana_cost": 2,
+        "image": "adsjda",
+        "rarity": {
+          "id": 1,
+          "name": "infrecuente"
+        },
+        "types": [
+          {
+            "id": 1,
+            "name": "criatura"
+          }
+        ],
+        "subtypes": "RicarditoArjona",
+        "effect": "Le gusta lo kinki nasty lo que sea facil? le gusta el sexo en exceso",
+        "quote": "Anachi",
+        "attack": 22,
+        "health": 0
+      }
+
+    ]
+}
+
