@@ -40,19 +40,17 @@ a {
 }
 #card-component #div-ribon:hover button {
   top: 25%;
-  font-size: 450%;
-  margin-left: -2.6vw;
 }
 #card-component #div-ribon button {
   position: absolute;
   top: 5%;
-  margin-left: -2.5vw;
-  width: 5vw;
+  margin-left: -2.3vw;
+  font-size: 100%;
   background: none;
   border: none;
-  font-size: 400%;
   color: #F7F7F7;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  width: 4vw;
 }
 
 #card-barra {
@@ -109,9 +107,9 @@ a {
   position: absolute;
   right: 0%;
   color: #9A3C29;
-  font-size: 250%;
   top: 20%;
   right: 3%;
+  width: 40px;
 }
 #cards-options #cards-option-searchbar input {
   border: none;
@@ -1121,7 +1119,7 @@ textarea:focus {
 }
 #feedbackComponent #barra {
   border-top: 10px solid #F7F7F7;
-  transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.1s ease;
 }
 #feedbackComponent button {
   position: absolute;

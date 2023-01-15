@@ -74,7 +74,7 @@ const Cards = () => {
   } 
   return (
     <div id='card-component'>
-        <div id='div-ribon'><Link href={'/Newcard'}><button ><FontAwesomeIcon icon={faSquarePlus}/></button></Link></div>
+        <div id='div-ribon'><Link href={'/Newcard'}><button><FontAwesomeIcon icon={faSquarePlus} id='ribon-icon'/></button></Link></div>
         <h1>Cartas</h1>
         <div id='card-barra'>
           <div id='card-barra-trapecio-izq'></div>

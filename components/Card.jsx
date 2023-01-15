@@ -47,10 +47,15 @@ const Card = ({card, setActiveDelete, setCartaActualElegida}) => {
       </div>
       
       <div id='card-description' className='card-description'>
-        {card.effect.includes('::')?
-          card.effect.split('::').map((el) => <p key={el}>{el}</p>)
-        : card.effect
-      }
+        {card.effect === null ? <></>:
+          card.effect.includes('::')?
+            card.effect.split('::').map((el) => <p key={el}>{el}</p>)
+          : 
+            card.effect
+        }
+        
+        
+      
       </div>
 
       {card.quote !== null &&
