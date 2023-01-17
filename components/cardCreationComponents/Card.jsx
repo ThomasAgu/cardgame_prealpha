@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBolt, faArrowsRotate, faLayerGroup, faSkullCrossbones } from '@fortawesome/free-solid-svg-icons'
+import { faBolt, faArrowsRotate, faLayerGroup, faSkullCrossbones} from '@fortawesome/free-solid-svg-icons'
 
 
 const Card = ({cardState, imagenLocal}) => {
@@ -10,7 +10,8 @@ const Card = ({cardState, imagenLocal}) => {
             <h3 id='card-title'>{cardState.name}</h3>
             <div id='card-cost'>
               <h3>{cardState.mana_cost}</h3>
-              <FontAwesomeIcon icon={faBolt}  id="card-cost-icon" />
+              <FontAwesomeIcon icon={faBolt}  id="card-cost-icon"/>
+              
             </div>
           </div>
     
@@ -32,7 +33,7 @@ const Card = ({cardState, imagenLocal}) => {
                 
                 case 'Puntos':
                   return(<div>{effect.cost} <FontAwesomeIcon icon={faBolt}  id="card-cost-icon" />: {effect.description}</div>);  
-    
+                 
                 case 'Invocacion':
                   return(<div><FontAwesomeIcon icon={faLayerGroup}  id="card-cost-icon" />: {effect.description}</div>)
     

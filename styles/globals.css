@@ -187,6 +187,7 @@ a {
 }
 
 #card-cost-icon {
+  width: 15px;
   padding-top: 0.2em;
   margin-right: 0.2em;
 }
@@ -396,6 +397,7 @@ textarea:focus {
 }
 
 .point-icon {
+  width: 20px;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
