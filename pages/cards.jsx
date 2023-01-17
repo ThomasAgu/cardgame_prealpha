@@ -21,7 +21,6 @@ const Cards = () => {
       dispatch(initCards(cards))
       console.log(cards)
     })
-    
   }, [dispatch])
   /* Cargar las cartas cuando el usuario va a la opcion de cartas. */
 
@@ -55,6 +54,7 @@ const Cards = () => {
       if(boton.id === string){
         boton.classList.add('active')
         setFiltro(boton.id);
+        console.log("Let me do it for u 👀 ⊃")
       }
       else{
         boton.classList.remove('active')
