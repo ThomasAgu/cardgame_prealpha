@@ -14,8 +14,8 @@ const CardActionBtns = ({active, setActive, setActiveDelete}) => {
     <>    
     {active &&
     <div id='card-action-btns'>
-        <button id='delete' onClick={()=>setActiveDelete(true)}><FontAwesomeIcon icon={faBan} /></button>
-        <button id='update'><FontAwesomeIcon icon={faWrench} /></button>
+        <button id='delete' onClick={()=>setActiveDelete(true)}><FontAwesomeIcon icon={faBan} className='card-action-icon' /></button>
+        <button id='update'><FontAwesomeIcon icon={faWrench} className='card-action-icon' /></button>
     </div>
     }
     </>
