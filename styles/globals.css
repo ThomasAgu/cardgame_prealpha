@@ -397,12 +397,12 @@ textarea:focus {
 }
 
 .point-icon {
-  font-size: 100%;
+  width: 20px;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .point-icon:hover {
-  font-size: 170%;
+  width: 25px;
   color: var(--dark-violet);
 }
 
