@@ -73,21 +73,26 @@ const Form = ({setCardState, cardState, setImagenLocal, setActiveF, feedStatus, 
     setCardState({...cardState, quote: e.target.value})
   }
 
+  const handleExitoReturn = () =>{
+    setFeedStatus({...feedStatus, text: 'Carta creada correctamente, redireccionando...', color: '#85A490'})
+    setTimeout(() => {
+      router.push('/')
+    }, 5000)
+  }
+
   const handleSumbitNewCard = (e) =>{
     e.preventDefault();
     const typeCheckedCant = Array.from(document.querySelectorAll("input[type=checkbox]")).filter((each) => each.checked === true ).length;
     /* Chequear el tipo */
     if( typeCheckedCant > 0){
-      post(cardState).then(
-        //redirec aca mas feedback
-        setFeedStatus({...feedStatus, text: 'Carta creada correctamente', color: '#85A490'})
+      post(cardState).then( 
+        handleExitoReturn()
       );
     }
     else{
       setFeedStatus({...feedStatus, text: 'Elija por lo menos un tipo de carta', color: '#9A3C29'})
     }
     setActiveF(true);
-    
   }
 
   const returnTypes = () =>{ //ver porque no devuelve l oque pido
