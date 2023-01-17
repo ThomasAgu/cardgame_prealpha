@@ -267,20 +267,6 @@ a {
   width: 5px;
 }
 
-#card-commander {
-  border: 1px solid #393E46;
-  margin: 2%;
-  padding: 3%;
-  font-family: "Rubik", sans-serif;
-  font-weight: 300;
-  color: #393E46;
-}
-
-#card-commander span {
-  font-weight: bolder;
-  color: #393E46;
-}
-
 #card-quote {
   padding: 3%;
   font-style: italic;
@@ -653,6 +639,7 @@ textarea:focus {
   box-shadow: 1px 1px 10px #434343;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 2%;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
@@ -719,15 +706,42 @@ textarea:focus {
   color: #F2F2F2;
 }
 
-.card .card-commander {
+#card-commander {
+  background-color: #61481C;
+  color: #E6B325;
   margin: 2%;
-  padding: 3%;
+  padding-top: 5%;
+  padding-left: 4%;
   font-family: "Rubik", sans-serif;
-  font-weight: 300;
+  font-size: 80%;
+  word-wrap: break-word;
+  /* Altura */
+  max-height: 10vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.card .card-commander span {
-  font-weight: bolder;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F2E7D5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #393E46;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #393E46;
+  width: 5px;
 }
 
 .card .card-quote {
@@ -789,11 +803,6 @@ textarea:focus {
   background-color: #61481C;
 }
 
-#comandante #card-commander {
-  border: 1px solid #BF9742;
-  background-color: #A47E3B;
-}
-
 #comandante #card-points {
   border-top: 1px solid #E6B325;
   background-color: #61481C;
@@ -802,10 +811,7 @@ textarea:focus {
 
 #comandante #card-quote {
   color: #61481C;
-}
-
-#comandante #card-commander {
-  color: #61481C;
+  word-wrap: break-word;
 }
 
 #artefacto {

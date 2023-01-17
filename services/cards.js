@@ -16,7 +16,7 @@ export const post = async(cardState) => {
         rarity_id: cardState.rarity.id, 
         attack: cardState.attack, 
         health: cardState.health, 
-        //"commander_effect":cardState.commander_effect, 
+        commander_effect:cardState.commander_effect, 
         quote: cardState.quote
      };
      //Arreglar esto dewspues
@@ -29,9 +29,11 @@ export const post = async(cardState) => {
     cardState.effects.map((el) => effect += `::${el.effectactivation} ${el.cost > 0 ? el.cost: ''} : ${el.description} `)
     form_data.append('effect', effect)
     //append type id
-    cardState.types.map((el) =>{
+    cardState.types.map((el, index) =>{
         form_data.append("type_id", el.id)
     })
+    console.log(cardState.types)
+    /* form_data.append("type_id",cardState.types[0].id) */ 
     //append image
     form_data.append("image", cardState.image);
     const res = await axios({

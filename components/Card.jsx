@@ -46,17 +46,24 @@ const Card = ({card, setActiveDelete, setCartaActualElegida}) => {
           {card.types.map((el) => ` ${el.name}` )} {card.subtypes !== null ? `/ ${card.subtypes}`:""} / {card.rarity.name}
       </div>
       
-      <div id='card-description' className='card-description'>
-        {card.effect === null ? <></>:
-          card.effect.includes('::')?
+      
+      {/* Todo este chequeo esta para saber si tiene descripcion o no y si esta formateada para imprimir mejor */}
+      {card.effect === null ? <></>:
+        <div id='card-description' className='card-description'>
+          {card.effect.includes('::')?
             card.effect.split('::').map((el) => <p key={el}>{el}</p>)
           : 
             card.effect
-        }
-        
-        
-      
-      </div>
+          }
+        </div>
+      }
+
+      {card.commander_effect !== null ? 
+        <div id='card-commander'>comandar: {card.commander_effect}</div>
+      :
+        <></>
+      }
+    
 
       {card.quote !== null &&
       <div id="card-quote" className='card-quote'> 	&#34;{card.quote}&#34; </div>}
