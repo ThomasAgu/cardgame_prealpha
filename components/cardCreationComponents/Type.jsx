@@ -30,13 +30,14 @@ const Type = ({setCardState,  cardState}) => {
     <div id='type-form'>
         <label htmlFor="type">Tipo</label>
         <div id='checklist'> 
-          <div className='checklist-item'>Comandante </div><input type="checkbox" name="comandante" id="comandante" value={5} onChange={handleChangeBox}/> 
+          <div className='checklist-item'>Comandante </div><input type="checkbox" name="comandante" id="comandante" value={1} onChange={handleChangeBox}/> 
           <div className='checklist-item'>Criatura</div> <input type="checkbox" name="criatura" id="criatura" value={2} onChange={handleChangeBox}/> 
-          <div className='checklist-item'>Encantamiento </div><input type="checkbox" name="encantamiento" id="encantamiento" value={3} onChange={handleChangeBox}/> 
+          <div className='checklist-item'>Encantamiento </div><input type="checkbox" name="encantamiento" id="encantamiento" value={4} onChange={handleChangeBox}/> 
           <div className='checklist-item'>Conjuro </div><input type="checkbox" name="conjuro" id="conjuro" value={6} onChange={handleChangeBox}/> 
-          <div className='checklist-item'>Instantaneo</div><input type="checkbox" name="instantaneo" id="instantaneo" value={1} onChange={handleChangeBox}/> 
-          <div className='checklist-item'>Artefacto</div><input type="checkbox" name="artefacto" id="artefacto" value={4} onChange={handleChangeBox}/>   
-      </div>
+          <div className='checklist-item'>Instantaneo</div><input type="checkbox" name="instantaneo" id="instantaneo" value={5} onChange={handleChangeBox}/> 
+          <div className='checklist-item'>Artefacto</div><input type="checkbox" name="artefacto" id="artefacto" value={3} onChange={handleChangeBox}/>   
+{/*        <div className='checklist-item'>Token</div><input type="checkbox" name="token" id="token" value={7} onChange={handleChangeBox}/>   
+ */}      </div>
     </div>
   )
 }
